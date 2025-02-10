@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8B4513;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px; 
+    height: 1000px;  
+    background-color: #F5F5DC;
+    border: 20px solid #8B4513;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .page {
+    width: 700px; 
+    height: 100%;
+    background-color: #F5F5DC;
+    border: 5px solid #8B4513;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4B3621;
+    font-size: 22px;  
+
+    overflow-y: auto;
+  }
+  .page-left {
+    border-right: none;
+    margin-right: 30px;
+  }
+  .page-right {
+    border-left: none;
+    margin-left: 30px;
+  }
+  .page h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 64px; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .page p::first-letter {
+    font-size: 64px;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+    color: #8B4513;
+  }
+  .book a {
+    font-size: 22px;
+    color: #4B3621;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
